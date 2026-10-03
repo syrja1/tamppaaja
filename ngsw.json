@@ -1,0 +1,125 @@
+{
+  "configVersion": 1,
+  "timestamp": 1791071073225,
+  "index": "/tamppaaja/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/tamppaaja/favicon.ico",
+        "/tamppaaja/index.html",
+        "/tamppaaja/main-6776HWLS.js",
+        "/tamppaaja/manifest.webmanifest",
+        "/tamppaaja/styles-P3LBJNYJ.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/tamppaaja/icons/icon-128x128.png",
+        "/tamppaaja/icons/icon-144x144.png",
+        "/tamppaaja/icons/icon-152x152.png",
+        "/tamppaaja/icons/icon-192x192.png",
+        "/tamppaaja/icons/icon-384x384.png",
+        "/tamppaaja/icons/icon-512x512.png",
+        "/tamppaaja/icons/icon-72x72.png",
+        "/tamppaaja/icons/icon-96x96.png",
+        "/tamppaaja/media/layers-2x-TBM42ERR.png",
+        "/tamppaaja/media/layers-55W3Q4RM.png",
+        "/tamppaaja/media/marker-icon-2V3QKKVC.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "streets",
+      "patterns": [
+        "https:\\/\\/avoinapi\\.vaylapilvi\\.fi\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 200,
+      "maxAge": 2592000000,
+      "timeoutMs": 10000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    },
+    {
+      "name": "areas",
+      "patterns": [
+        "https:\\/\\/geo\\.stat\\.fi\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 7776000000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    },
+    {
+      "name": "tiles",
+      "patterns": [
+        "https:\\/\\/avoin-karttakuva\\.maanmittauslaitos\\.fi\\/.*",
+        "https:\\/\\/tile\\.openstreetmap\\.org\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 3000,
+      "maxAge": 2592000000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/tamppaaja/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/tamppaaja/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/tamppaaja/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/tamppaaja/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/tamppaaja/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/tamppaaja/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/tamppaaja/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/tamppaaja/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/tamppaaja/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/tamppaaja/index.html": "29fb4cabf379456dc836b62936c76dde4233a566",
+    "/tamppaaja/main-6776HWLS.js": "11f3d8e0ea497c89fce491a497520bfc2d0b80a2",
+    "/tamppaaja/manifest.webmanifest": "6026865a966f51d2a295b42682d0f882de3970d8",
+    "/tamppaaja/media/layers-2x-TBM42ERR.png": "152a162333e46d24f9d89f566312fc0c64011dee",
+    "/tamppaaja/media/layers-55W3Q4RM.png": "c9e7528e491a39232ba24a2706c6c739d6fb0f06",
+    "/tamppaaja/media/marker-icon-2V3QKKVC.png": "60a90bcbb2b42b7ddb4556db94eb7c1084b0e5da",
+    "/tamppaaja/styles-P3LBJNYJ.css": "66dfc2c6c9eff17d842f5bd351388383edff8d6c"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
